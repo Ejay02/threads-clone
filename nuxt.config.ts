@@ -40,6 +40,9 @@ export default defineNuxtConfig({
       enabled: true,
       type: "module",
     },
+    workbox: {
+      navigateFallbackDenylist: [/^\/_/],
+    },
   },
   app: {
     head: {
